@@ -27,7 +27,7 @@ const OnOff = ({ interr, setSwitch }) => {
         onClick={handleClick}
         style={{
           backgroundColor: interr === true ? "#fff" : "#5C48D3",
-          color: interr === false ? "black" : "#5C48D3",
+          color: interr === false ? "#fff" : "#5C48D3",
         }}
       >
         OFF
