@@ -2,10 +2,13 @@
 // import Reset from "./Reset";
 
 const OnOff = ({ interr, setSwitch }) => {
-  const handleClick = () => {
+  const ClickOn = () => {
     if (interr === false) {
       setSwitch(true);
-    } else {
+    }
+  };
+  const ClickOff = () => {
+    if (interr === true) {
       setSwitch(false);
     }
   };
@@ -14,7 +17,7 @@ const OnOff = ({ interr, setSwitch }) => {
     <div className="switch">
       <button
         className="on"
-        onClick={handleClick}
+        onClick={ClickOn}
         style={{
           backgroundColor: interr === false ? "#fff" : "#5C48D3",
           color: interr === true ? "black" : "#5C48D3",
@@ -24,7 +27,7 @@ const OnOff = ({ interr, setSwitch }) => {
       </button>
       <button
         className="off"
-        onClick={handleClick}
+        onClick={ClickOff}
         style={{
           backgroundColor: interr === true ? "#fff" : "#5C48D3",
           color: interr === false ? "#fff" : "#5C48D3",
