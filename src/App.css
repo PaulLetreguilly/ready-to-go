@@ -1,1 +1,89 @@
-/* Other rules */
+/********************** Other rules **********************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/********************** HEADER **********************/
+
+header {
+  max-width: 1024px;
+  height: 120px;
+  margin: 0 auto;
+  border-bottom: solid 1px #e5e5e5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+header span {
+  font-size: 24px;
+}
+
+/********************** MAIN **********************/
+
+.container {
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 150px auto;
+}
+
+.container > div {
+  padding: 50px 50px;
+  border: 1px black solid;
+  color: white;
+}
+.switch button {
+  padding: 20px 20px;
+  margin: 10px 10px;
+}
+.container button,
+.container > div {
+  border-radius: 5px;
+  font-size: 30px;
+}
+.container button:hover {
+  cursor: pointer;
+}
+.container .on {
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.reset {
+  margin: 10px 40px;
+  padding: 20px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+/********************** FOOTER **********************/
+
+footer {
+  max-width: 1024px;
+  height: 150px;
+  margin: 0 auto;
+  font-size: 14px;
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span,
+footer a {
+  font-weight: bold;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
